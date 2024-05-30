@@ -25,7 +25,6 @@ describe('User API', () => {
         const response = await request(app)
             .post('/user/login')
             .send({ email: 'noam@example.com', password: 'password123' });
-        console.log(response);
         expect(response.status).toBe(200);
     });
 });
